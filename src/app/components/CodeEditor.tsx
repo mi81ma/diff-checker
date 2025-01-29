@@ -46,11 +46,11 @@ const CodeEditor: React.FC<CodeEditorProps> = ({
       <div className="relative flex-grow bg-gray-900">
         <pre
           ref={preRef}
-          className="absolute inset-0 w-full h-full p-4 font-mono text-sm pointer-events-none overflow-auto"
+          className={`absolute inset-0 w-full h-full p-4 font-mono text-sm pointer-events-none overflow-auto`}
           aria-hidden="true"
           tabIndex={0}
         >
-          <code className="language-typescript">{value || ' '}</code>
+          <code className="language-typescript">{value || '\u200B'}</code>
         </pre>
         <textarea
           ref={textareaRef}
