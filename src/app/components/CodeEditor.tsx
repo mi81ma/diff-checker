@@ -39,21 +39,11 @@ const CodeEditor: React.FC<CodeEditorProps> = ({
   };
 
   return (
-    <div className="flex flex-col w-full h-full">
+    <div className="flex flex-col min-w-[300px] min-h-[200px]">
       <div className="bg-gray-700 text-white px-4 py-2 text-sm font-medium">
         {title}
       </div>
       <div className="relative flex-grow bg-gray-900">
-        <textarea
-          ref={textareaRef}
-          value={value}
-          onChange={(e) => onChange(e.target.value)}
-          onScroll={handleScroll}
-          placeholder={placeholder}
-          className="absolute inset-0 w-full h-full p-4 font-mono text-sm bg-transparent text-transparent caret-white resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
-          spellCheck="false"
-          data-gramm="false"
-        />
         <pre
           ref={preRef}
           className="absolute inset-0 w-full h-full p-4 font-mono text-sm pointer-events-none overflow-auto"
@@ -62,6 +52,16 @@ const CodeEditor: React.FC<CodeEditorProps> = ({
         >
           <code className="language-typescript">{value || ' '}</code>
         </pre>
+        <textarea
+          ref={textareaRef}
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
+          onScroll={handleScroll}
+          placeholder={placeholder}
+          className="absolute inset-0 w-full h-full p-4 font-mono text-sm bg-gray-900 text-white caret-white resize-both focus:outline-none focus:ring-2 focus:ring-blue-500 z-10 border border-gray-600"
+          spellCheck="false"
+          data-gramm="false"
+        />
       </div>
     </div>
   );
