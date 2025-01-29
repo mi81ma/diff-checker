@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Diff Checker
+
+[![Next.js](https://img.shields.io/badge/Next.js-15.1.6-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.0.0-blue?style=flat-square&logo=react)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4.1-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/License-Private-red?style=flat-square)](LICENSE)
+[![Build Status](https://img.shields.io/badge/Build-Passing-success?style=flat-square)](https://github.com)
+
+A modern web application for checking and visualizing differences between text snippets. Built with Next.js, React, and TypeScript.
+
+## Features
+
+- Real-time diff checking
+- Syntax highlighting using Prism.js
+- Modern UI with TailwindCSS
+- Built on Next.js 15 framework
+- TypeScript support
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone [repository-url]
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Run the development server
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - Runs the development server
+- `npm run build` - Builds the application for production
+- `npm start` - Starts the production server
+- `npm run lint` - Runs ESLint for code linting
 
-## Learn More
+## Dependencies
 
-To learn more about Next.js, take a look at the following resources:
+### Core
+- Next.js: 15.1.6
+- React: 19.0.0
+- React DOM: 19.0.0
+- TypeScript: 5.x
+- TailwindCSS: 3.4.1
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Utilities
+- Prism.js: 1.29.0
+- diff-match-patch: 1.0.5
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Development Dependencies
 
-## Deploy on Vercel
+- ESLint
+- PostCSS
+- Various TypeScript type definitions
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This is a private repository. Please contact the repository owner for contribution guidelines.
+
+## License
+
+This project is private and not open for public use or distribution.
